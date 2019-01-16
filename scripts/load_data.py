@@ -3,7 +3,7 @@ def load_GSE77578():
 
   file_name = '../data/GSE77578_series_matrix.txt'
   df = pd.read_csv(file_name, sep='\t', header=[29,65], index_col=0)
-  df.drop('!series_matrix_table_end', inplace=True) # => 22697 x 56
+  df.drop('!series_matrix_table_end', inplace=True) # => 25697 x 56
 
   # take two conditions & rename columns
   sr = df.columns.get_level_values(0)
@@ -11,7 +11,7 @@ def load_GSE77578():
   sr = sr.str.replace('hippocampus_pilocarpine_vehicle', 'ctrl')
   sr = sr.str.replace('hippocampus_pilocarpine_PLX3397_3_mg/kg', 'expr')
   df.columns = sr
-  df = df.loc[:, ['ctrl','expr']]  # => 22697 x 35 (17 & 18)
+  df = df.loc[:, ['ctrl','expr']]  # => 25697 x 35 (17 & 18)
 
   # NOTE: global normalization has been already performed.
   #sns.boxplot(data=df.values, showfliers=False)
