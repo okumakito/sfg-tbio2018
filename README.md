@@ -2,7 +2,7 @@
 
 This repository provides source codes used in the following work.
 
-* Makito Oku: "Two novel methods for extracting synchronously fluctuated genes", IPSJ Transactions on Bioinformatics, to appear.
+* Makito Oku: "Two novel methods for extracting synchronously fluctuated genes", IPSJ Transactions on Bioinformatics, 12:9-16 (2019). https://doi.org/10.2197/ipsjtbio.12.9
 
 ## Requirements
 
